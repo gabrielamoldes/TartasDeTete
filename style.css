@@ -5,138 +5,46 @@
     text-decoration: none;
     list-style: none;
  
- 
  }
- /* HEDER */
- 
- .header{ 
-     grid-area: header;
-     background-color: #e1aeb4fd;
-     font-family: avenir_ff;
-     box-sizing: border-box;	
-     display: flex;
-     flex-direction: row;
-     align-items: center;	
+
+ body {
+    font-family: avenir_ff;
+    background-color: #facfd5fd;
  }
- 
- .logo-header{
-     width: 20%;
-     height: 90%;
-     display: flex;
-     box-sizing: border-box;	
-     justify-content: center;
-     align-items: center;
-     /*background-color: bisque;*/
- 
+ /* NAVBAR */
+
+ /*intentando cambiar tipografia y color de la barra de navegacion*/
+ nav.navbar ul.navbar li {
+    font-family: avenir_ff;
+    color: #146d4e;
  }
  
+ .img-logo-navbar{
+    display: flex;
+    width: 40%;
+    box-sizing: border-box;	
+    border-radius: 50%;
+    align-items: center;
+    /*outline: 1px solid black;*/
+}
  
- .logo-header a{
-     display: flex;
-     box-sizing: border-box;	
-     justify-content: center;
-     align-items: center;
-     /*background-color: aqua;*/
+/* transición en el logo de barra de navegacion */
+ .img-logo-navbar:hover{
+    opacity: 0.2;
+    transition: all 2s;
+}
  
- }
- 
- /* transición en el logo de barra de navegacion */
- .img-logo-header:hover{
-     opacity: 0.2;
-     transition: all 2s;
- }
- 
- .img-logo-header{
-     display: flex;
-     width: 50%;
-     box-sizing: border-box;	
-     border-radius: 50%;
-     align-items: center;
-     /*outline: 1px solid black;*/
- }
- 
- .nav{
-     width: 80%;
-     display: flex;
-     justify-content: flex-end;			
- }
- 
- .nav-header{
-     width: 80%;
-     display: flex;
-     box-sizing: border-box;	
-     justify-content: center;
-     align-items: center;
-     /*background-color: blueviolet;*/
- }
- 
- .nav-header li{
-     padding: 2%;
-     /*background-color: rgb(43, 226, 73);*/
- }
- 
- .link-nav-header{
-     color: #146d4e;
-     font-size: 20px;
-     /*outline: 1px solid hotpink;*/
-     
- }
- /*  fin del HEDER */
+ /*  fin del NAVBAR */
  
  
  /* seccion - INICIO */
  
- .container1{
-     display: grid;
-     box-sizing: border-box;
-     min-height: 100vh;
-     grid-template-areas:
-     "header header header"
-     "inicio-p1 inicio-fotos inicio-fotos"
-     "inicio-p1 inicio-p2 inicio-p2"
-     "footer footer footer";
-     grid-template-columns: 30% 1fr 1fr;
-     grid-template-rows: 15% auto 10% 10%;
- }
- 
- .inicio-fotos{
-     grid-area: inicio-fotos;
-     display: flex;
-     box-sizing: border-box;	
-     justify-content: center;
-     align-items: center;
-     padding: 5%;
-     background-image: url(./imagenes/fondo2.png);
-     background-size: cover;
-     
- }
- .inicio-fotos img{
-     box-sizing: border-box;	
-     width: 100%;
- }
- 
- .inicio-p1{
-     grid-area: inicio-p1;
-     display: flex;
-     box-sizing: border-box;	
-     background-color: #facfd5fd;
-     font-family: avenir_ff;
-     font-size: 15px;
-     color: #146d4e;
-     font-weight: bold;
-     flex-direction: column;
-     text-align: center;
-     justify-content: center;
-     align-items: center;
-     padding: 20%;
-     
- }
- .inicio-p1 h1{
-     margin-bottom: 50%;
- 
- }
+ #texto-index{
+    color: #146d4e;
+}
   /* Animación en el titulo de bienvenida en la pagina de inicio */
- .inicio-p1 h1:hover{
+ 
+  #texto-bienvenidad:hover{
      animation: movement 4s;
  }
  
@@ -148,30 +56,17 @@
      
          25% {
              transform: translateY(-20px);
+             transition: all;
          }
  
          50%{
              
-             font-size: 25px;
+             font-size: 19px;
              transition: all;
          }
      
  }
  
- .inicio-p2{
-     grid-area: inicio-p2;
-     display: flex;
-     box-sizing: border-box;	
-     font-family: avenir_ff;
-     font-size: 15px;
-     color: #146d4ebc;
-     text-align: center;
-     justify-content: center;
-     align-items: center;
-     background-color: #facfd5fd;
-     background-size: cover;
-     
- }
   /* Fin de seccion - INICIO */
  
  
@@ -365,68 +260,31 @@
  
  /* FOOTER */
  
- footer{
-     grid-area: footer;
-     font-family: avenir_ff;
-     background-color: #e1aeb4fd;
-     box-sizing: border-box;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     
- }
- 
- .logo-footer{
-     box-sizing: border-box;	
-     display: flex;
-     width: 20%;
-     justify-content: center;
-     /*background-color: chartreuse;*/
- }
- 
- .logo-footer img{
-     display: flex;
-     box-sizing: border-box;	
-     width: 30%;
-     border-radius: 50%;	
- }
- 
- .dire-footer{
-     width: 45%;
-     /*background-color: rgb(255, 0, 149);*/
- }
- 
- .dire-footer p {
-     color: #146d4e;
-     font-size: 12px;
-     
- }
- 
- .tel-footer{
-     width: 20%;
-     display: flex;
-     align-items: center;
-     /*background-color: chartreuse;*/
- }
- 
- .tel-footer p {
-     color: #146d4e;
-     font-size: 12px;
-     
- }
- 
- .redes-footer{
-     width: 15%;
-     display: flex;
-     /*background-color: coral;*/
- }
-  
  .fa-brands{
-     color: #146d4e;
-     font-size: 40px;
-     padding: 10px;
-     
- }
+    color: #146d4e;
+    font-size: 40px;
+    padding: 10px;
+    
+}
+
+.logo-footer {
+    display: flex;
+    box-sizing: border-box;	
+    border-radius: 50%;	
+    width: 90%;
+    
+}
+
+#texto-footer{
+    color: #146d4e;
+    font-size: 40px;
+}
+
+#num-footer{
+    color: #146d4e;
+    font-size: 40px;
+}
+
  
  /* Fin de FOOTER */
  
