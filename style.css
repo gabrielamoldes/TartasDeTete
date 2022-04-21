@@ -72,49 +72,10 @@
  
  /* seccion - NOSOTROS */
  
- .container2{
-     display: grid;
-     box-sizing: border-box;
-     min-height: 100vh;
-     grid-template-areas:
-     "header      header "
-     "nosotros-p1 nosotros-foto"
-     "footer      footer";
-     grid-template-columns: 40% 60%;
-     grid-template-rows: 15% auto 10%;
- }
- .nosotros-p1{
-     grid-area: nosotros-p1;
-     display: flex;
-     box-sizing: border-box;
-     justify-content: center;
-     align-items: center;
-     background-image: url(./imagenes/fondo2.png);
-     background-position: center;
-     background-attachment: contain;
-     background-size: cover;
-     
- }
- .p-nosotros{
-     font-family: avenir_ff;
-     font-size: 18px;
-     color: #146d4e;
-     text-align: justify;
-     width: 80%;
- }
+ #texto-nosotros{
+    color: #146d4e;
+}
  
- .nosotros-foto{
-     grid-area: nosotros-foto;
-     display: flex;
-     box-sizing: border-box;
-     justify-content: center;
-     background-color: #f8daddfd;
-     
- }
- 
- .nosotros-foto img{
-     align-items: center;
- }
  
  /* Fin de seccion - NOSOTROS */
  
@@ -155,7 +116,7 @@
  /* seccion - PRODUCTOS 
  Queda por trabajar las imagenes y las secciones que estan por debajo*/
  
- .productos{
+ /* .productos{
      width: 100%;
      display: flex;
      justify-content: center;
@@ -217,7 +178,7 @@
  
  .img-productos{
      width: 300px;
- }
+ } */
  
  /* Fin de seccion - PRODUCTOS */
  
