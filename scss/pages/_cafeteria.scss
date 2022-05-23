@@ -1,0 +1,38 @@
+/* seccion - CAFETERIA 
+ En esta seccion el fondo queda detras de la barra de navegacion y todavía no pude corregirlo*/
+
+@import '../base/listas';
+@import '../base/maps';
+
+ .cafeteria{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: map-get($bg1-pages, bg-image);
+    background-position: map-get($bg1-pages, bg-position);
+    background-attachment: map-get($bg1-pages, bg-attachment);
+    background-size: map-get($bg1-pages, bg-size);
+    box-sizing: map-get($bg1-pages, box-sizing);
+
+    .video-cafeteria{
+        width: 80%;
+        height: 500px;
+        padding-top: 20px;
+    }
+
+    .p-cafeteria{
+        width: 70%;
+        font-family: avenir_ff;
+        font-size: 20px;
+        color: nth($colors, 3);
+        text-align: center;
+        padding: 20px 0px;
+    
+    }
+
+}
+
+
+/* Fin seccion - CAFETERIA */

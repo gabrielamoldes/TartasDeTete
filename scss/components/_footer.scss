@@ -1,0 +1,36 @@
+/* FOOTER */
+@import '../base/listas';
+
+footer{
+    div{
+        div{
+            img{ 
+                display: flex;
+                box-sizing: border-box;	
+                border-radius: 50%;	
+                width: 90%;
+            }
+        }
+        div{
+            p{
+                color: nth($colors, 3);
+                font-size: 40px; 
+            }
+        }    
+        div{
+            i{
+                color: nth($colors, 3);
+                font-size: 40px;
+                padding: 10px;
+            }
+            p{
+                color: nth($colors, 3);
+                font-size: 40px;
+            }
+        }
+
+    }
+}
+
+ /* Fin de FOOTER */
+ 

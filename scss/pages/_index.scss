@@ -1,0 +1,35 @@
+/* seccion - INICIO */
+@import '../base/listas';
+
+div{
+    color: nth($colors, 3);
+
+    div{
+        h1 {
+            &:hover{
+                animation: movement 4s;
+        }
+        
+        @keyframes movement {
+                0% {
+                    opacity: 0.2;
+                    transition: all;
+                }
+            
+                25% {
+                    transform: translateY(-20px);
+                    transition: all;
+                }
+        
+                50%{
+                    
+                    font-size: 19px;
+                    transition: all;
+            } 
+                }
+        }
+    }
+}
+ 
+  /* Fin de seccion - INICIO */
+ 

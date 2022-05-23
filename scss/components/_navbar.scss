@@ -1,0 +1,38 @@
+ /* NAVBAR */
+ @import '../base/listas';
+ /*intentando cambiar tipografia y color de la barra de navegacion*/
+ section{
+   nav{
+     background-color: nth($colors, 2);
+       div{
+           a{
+               img{
+                   display: flex;
+                   width: 40%;
+                   box-sizing: border-box;	
+                   border-radius: 50%;
+                   align-items: center;
+                   /*outline: 1px solid black;*/
+                   &:hover {
+                       opacity: 0.2;
+                       transition: all 2s;
+                   }
+                }
+            }
+            
+            ul{
+                li{
+                   a{
+                    font-family: avenir_ff;
+                    color: nth($colors, 3);
+                   } 
+                }
+
+            }
+        }
+    }
+}
+
+ 
+ /*  fin del NAVBAR */
+ 

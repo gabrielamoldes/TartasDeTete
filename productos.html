@@ -15,7 +15,7 @@
         <script src="https://kit.fontawesome.com/03d3599610.js" crossorigin="anonymous"></script>
 
         <!--CSS-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     
         <title>Tartas de tete</title>
     
@@ -23,38 +23,42 @@
   
     <body>
      <!--------------NAVBAR--------------------->   
-        <section>
-                <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #facfd5fd">
-                    <div class="container-fluid">
-                        <a class="navbar-brand mx-3" href="index.html"><img src="imagenes/logo-cuadrado.png"   class="img-logo-navbar" alt="logo"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav fs-5 fw-bold">
-                            <li class="nav-item">
-                            <a class="nav-link active px-3" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item ">
-                            <a class="nav-link px-3" href="./nosotros.html">Sobre nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link px-3" href="./cafeteria.html">Cafeteria</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Productos
-                                </a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contactos.html">Contactos</a>
-                                </li>
+     <section>
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-3" href="index.html"><img src="imagenes/logo-cuadrado.png"   class="img-logo-navbar" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav fs-5 fw-bold">
+                    <li class="nav-item">
+                    <a class="nav-link active px-3" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link px-3" href="./nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link px-3" href="./cafeteria.html">Cafeteria</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"style="background-color: #e1aeb4fd">
+                            <li><a class="dropdown-item" href="productos.html#tartas">Tartas</a></li>
+                            <li><a class="dropdown-item" href="productos.html#mesas">Mesas dulces</a></li>
+                            <li><a class="dropdown-item" href="productos.html#pasteleria">Pasteleria</a></li>
                         </ul>
-                        </div>
-                    </div>
-                </nav> 
-        </section>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+                </ul>
+                </div>
+            </div>
+        </nav> 
+</section>
 
 <!-----------------PRODUCTOS-----------------> 
 <section class="w-100">
@@ -64,7 +68,7 @@
 
             <div>
                 <h3 class="fs-5 mt-4 px-4 pb-1"><a class= "text-dark" href="#tartas">Tartas</a></h3>
-                <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde soluta perspiciatis voluptates tempora architecto iure, possimus numquam beatae! Enim recusandae molestias veritatis, ea aut neque impedit odio alias consectetur.</p>
+                <p class="px-4">Elaboramos tartas artesanales de deliciosos sabores y con la decoración de tus sueños. Nos encantan los desafios y las ideas originales.</p>
             </div>
 
         </div>
@@ -74,7 +78,7 @@
 
             <div>
                 <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap"><a class= "text-dark" href="#mesas">Mesas Dulces</a></h3>
-                <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde soluta perspiciatis voluptates tempora architecto iure, possimus numquam beatae! Enim recusandae molestias veritatis, ea aut neque impedit odio alias consectetur.</p>
+                <p class="px-4">Organizamos mesas dulces, ya sean para acompañar una tarta o mesas de dulces con tartas y pastelería tradicional para eventos.</p>
             </div>
         </div> 
         
@@ -83,7 +87,7 @@
 
             <div>
                 <h3 class="fs-5 mt-4 px-4 pb-1"><a class= "text-dark" href="#pasteleria">Pastelería</a></h3>
-                <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde soluta perspiciatis voluptates tempora architecto iure, possimus numquam beatae! Enim recusandae molestias veritatis, ea aut neque impedit odio alias consectetur.</p>
+                <p class="px-4">Todos los días en nuetra cafetería podrás encotrar pastelería tradicional española y argentina, puedes sentarte a probarla o llevarla a casa. </p>
             </div>
         </div>
     </div>
@@ -92,10 +96,10 @@
 
 <section class="w-100 container-fluid mt-4">
     <div class="row w-75 mx-auto">
-        <h2>Tartas</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde soluta perspiciatis voluptates tempora architecto iure, possimus numquam beatae! Enim recusandae molestias veritatis, ea aut neque impedit odio alias consectetur.</p>
+        <h2 id="tartas">Tartas</h2>
+        <p>Cada tarta es única, y la diseñamos tanto en los sabores como en la decoración siempre tratando de cumplir los deseos de nuestros clientes. </p>
     </div>
-    <div class= " w-100 d-flex">
+    <div class= " w-75 d-flex">
         <div class="col-lg-4 col-md-12 col-sm-12 justify-content-start my-4">
             <img class= " w-100" src="imagenes/tortainfantil.png" alt="tarta">
             <p>Tartas Infantiles</p>
@@ -115,32 +119,32 @@
 </section>
 
 <section class="w-100 container-fluid mt-4">
-    <div class="w-75 mx-auto"></div>
-        <h2>Mesas Dulces</h2>
-        <p class="fs-5 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius adipisci recusandae, possimus in et aliquid error hic veritatis cumque rem ea iste? Nobis cumque ipsum velit? Molestias, possimus excepturi?</p>
+    <div class=" row w-75 mx-auto">
+        <h2 id="mesas">Mesas Dulces</h2>
+        <p class="fs-5 m-3">Las mesas de dulces temáticas siguen la decoración del evento, nos preocupamos por crear siempre formas originales y sabores deliciosos para crear una mesa armoniosa y agradable visualmente. Además tambien preparamos mesas de dulces tradicionales, para todo tipo de eventos, siempre buscando crear un efecto visual agradable. </p>
     </div>
-    
-    <div>
-        <img src="imagenes/mesatematica.png" alt="mesa dulce">
+    <div class= " w-75 d-flex">
+        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-start mx-auto">
+        <img class= " w-100" src="imagenes/mesatematica.png" alt="mesa dulce">
         <p>Mesas dulces Temáticas</p>
-    </div>
-    
-    <div>
-        <img src="imagenes/mesaeventos.png" alt="mesa dulce">
+        </div>
+   
+        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-start mx-4">
+        <img class= " w-100" src="imagenes/mesaeventos.png" alt="mesa dulce">
         <p>Mesas dulces para eventos</p>
+        </div>
     </div>
 </section>
 
-<section class=" w-100">
-    <div class=" w-75">
-        <h2>Pastelería</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit modi asperiores sapiente placeat veniam dolorum fugiat neque numquam fugit in ipsa, similique corrupti ab 
-        eligendi praesentium doloremque exercitationem labore.</p>
+<section class="w-100 container-fluid mt-4">
+    <div class=" row w-75 mx-auto">
+        <h2 id="pasteleria">Pastelería</h2>
+        <p>Tenemos una amplia variedad de pastelería tradicional, respetando los sabores de siempre tanto en la pastelería española como argentina. Además siempre estamos en la búsqueda de nuevos sabores y nuevas recetas. Siempre encontraran algo nuevo para degustar</p>
     </div>
     
-    <div  class="w-100 d-flex">
-        <img class=" col-lg-6 col-md-6 col-sm-12 w-75" src="imagenes/pasteleria1.png" alt="pastel">
-        <img class=" col-lg-6 col-md-6 col-sm-12 w-75" src="imagenes/pasteleria2.png" alt="pastel">
+    <div class= "w-75 d-flex">
+            <img class=" col-lg-6 col-md-12 col-sm-12 justify-content-start mx-4" src="imagenes/pasteleria1.png" alt="pastel">
+            <img class=" col-lg-6 col-md-12 col-sm-12 justify-content-start mx-4" src="imagenes/pasteleria2.png" alt="pastel">
     </div>
 </section>
 

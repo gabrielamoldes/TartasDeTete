@@ -1,0 +1,52 @@
+ /* seccion - CONTACTOS 
+ en esta seccion todavía no decido la disposición de las cosas */
+ @import '../base/listas';
+ @import '../base/maps';
+ 
+ section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: avenir_ff;
+    background-image: map-get($bg2-pages, bg-image);
+    background-position: map-get($bg2-pages, bg-position);
+    background-attachment: map-get($bg2-pages, bg-attachment);
+    background-size: map-get($bg2-pages, bg-size);
+    box-sizing: map-get($bg2-pages, box-sizing);
+
+    h3{
+        font-size: 30px;
+        color: nth($colors, 3);
+        padding-top: 10px;
+        padding-bottom: 30px;  
+    }
+    p{
+        color: nth($colors, 3);
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    
+    i{ 
+        color: nth($colors, 3);
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    p{ 
+        color: nth($colors, 3);
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+
+    div{
+        color: nth($colors, 3);
+        font-size: 40px;
+    
+    }
+
+        
+}
+
+/* Fin de seccion - CONTACTOS */
